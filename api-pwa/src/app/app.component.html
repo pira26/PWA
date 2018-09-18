@@ -1,0 +1,13 @@
+<div style="text-align:center">
+  <h1>{{ title }}</h1>
+  <div class="buttons-container">
+    <button type="button" (click)="getChuckNorrisJoke()">Chuck Norris' Joke</button>
+    <button type="button" (click)="getRonSwansonQuote()">Ron Swanson's Quote</button>
+    <button type="button" (click)="getYesOrNot()">Yes or Not</button>
+    <button type="button" (click)="getQuote()">Quote of the day</button>
+    <button type="button" (click)="getDidYouKnow()">Did you know</button>
+  </div>
+  <div class="api-result-container">
+    <p *ngIf="text">{{ text }}</p>
+  </div>
+</div>
